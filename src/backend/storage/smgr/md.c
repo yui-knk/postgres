@@ -1824,7 +1824,7 @@ _mdfd_openseg(SMgrRelation reln, ForkNumber forknum, BlockNumber segno,
 	if (fd < 0)
 		return NULL;
 
-	if (segno <= reln->md_num_open_segs[forknum])
+	if (reln->md_num_open_segs[forknum] <= segno)
 		_fdvec_resize(reln, forknum, segno + 1);
 
 	/* fill the entry */

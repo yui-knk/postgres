@@ -1944,7 +1944,7 @@ typedef struct AggState
 
 	/* support for evaluation of agg input expressions: */
 #define FIELDNO_AGGSTATE_ALL_PERGROUPS 34
-	AggStatePerGroup *all_pergroups;	/* array of first ->pergroups, than
+	AggStatePerGroup *all_pergroups;	/* array of first ->pergroups, then
 										 * ->hash_pergroup */
 	ProjectionInfo *combinedproj;	/* projection machinery */
 } AggState;

@@ -15,7 +15,7 @@
 /*
  * INTERFACE ROUTINES
  *		ExecSeqScan				sequentially scans a relation.
- *		ExecSeqNext				retrieve next tuple in sequential order.
+ *		SeqNext					retrieve next tuple in sequential order.
  *		ExecInitSeqScan			creates and initializes a seqscan node.
  *		ExecEndSeqScan			releases any storage allocated.
  *		ExecReScanSeqScan		rescans the relation

@@ -178,7 +178,7 @@ Expression Evaluation
 
 To allow for different methods of expression evaluation, and for
 better branch/jump target prediction, expressions are evaluated by
-calling ExprState->evalfunc (via ExprEvalExpr() and friends).
+calling ExprState->evalfunc (via ExecEvalExpr() and friends).
 
 ExprReadyExpr() can choose the method of interpretation by setting
 evalfunc to an appropriate function.  The default execution function,
